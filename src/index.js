@@ -11,6 +11,9 @@ import runReducer from './reducers/runReducer';
 import {createStore, applyMiddleware, compose} from 'redux' //compose combines all the different middlewares
 import thunk from 'redux-thunk' //lets you make asynch calls to the backend used for any fetch calls 
 import {Provider} from 'react-redux'
+//---ROUTER---
+import {BrowserRouter as Router} from 'react-router-dom'
+
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 //create a reducer, applyMiddleware and thunk
@@ -18,10 +21,13 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 let store = createStore(runReducer, composeEnhancers(applyMiddleware(thunk)))
 
 
-//wrap App in Provider
+//wrap App in Provider --> gives App and all its children access to the store
+//Wrap App in Router --> gives App and all its children access to create Routes --> You need to import this at top
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </Provider>
   ,
   document.getElementById('root')

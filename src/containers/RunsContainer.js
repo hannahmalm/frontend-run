@@ -1,10 +1,14 @@
 //render other components
 //class componenets
+import App from "../App";
 import React from "react";
 import {connect} from 'react-redux'
 import RunForm from "../components/RunForm";
 import RunList from "../components/RunList";
 import {fetchRuns} from '../actions/fetchRuns.js'
+import { Route } from "react-router-dom";
+
+import Test from "../components/Test";
 
 //a class component must have a render 
 class RunsContainer extends React.Component{
@@ -17,11 +21,14 @@ componentDidMount(){
     this.props.fetchRuns()
 }
 
+//render takes in a function for passing in routes to a route
     render() {
         return(
             <div> 
-                In My Run Container I see:
-                <RunForm></RunForm> 
+                {/* <Route path='/test' component={Test}/> */}
+                {/* <Route path='/runs/new' component={RunForm}/> */}
+                {/* <Route path='/runs/:id' />
+                <Route exact path='/runs' render={() => <RunList runs={this.props.runs}/>} /> */}
                 <RunList runs={this.props.runs}/>
             </div>
         )
