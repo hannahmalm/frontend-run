@@ -3,10 +3,11 @@ import React from "react";
 //pass the props in as an argument
 //you do NOT need a render in a funcitonal component
 
+//props is the info being passed from run container to child component of runs
 const RunList = (props) => {
     return (
         <div>
-            RunList
+           {props.runs.map(run => <li key={run.id}> {run.category}</li> )}
         </div>
     )
 }
