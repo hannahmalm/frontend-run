@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+//---STORE---
+import {createStore, applyMiddleware} from 'redux'
+import thunk from 'redux-thunk' //lets you make asynch calls 
+import {Provider} from 'react-redux'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
