@@ -3,6 +3,7 @@
 //a reducer is a funciton
 //import reducer into store 
 
+
 //inital state is the key of runs with the array of runs
 export default function runReducer(state = {runs: []}, action) {
     return state 

@@ -9,7 +9,7 @@ import runReducer from './reducers/runReducer';
 
 //---STORE---
 import {createStore, applyMiddleware, compose} from 'redux' //compose combines all the different middlewares
-import thunk from 'redux-thunk' //lets you make asynch calls 
+import thunk from 'redux-thunk' //lets you make asynch calls to the backend used for any fetch calls 
 import {Provider} from 'react-redux'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
