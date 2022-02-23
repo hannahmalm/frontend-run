@@ -1,5 +1,7 @@
 //new run form 
 import React from "react";
+import {connect} from 'react-redux' //connecting to store
+import { createRun } from "../actions/createRun";
 
 //class component - Will take in State
 //CONTROLLED FORM need a value
@@ -11,17 +13,19 @@ class RunForm extends React.Component{
     //onchange
     //pass in event as paramenter
     //event.target.value shows what you are typing in
-    handleOnChange = (event) => {
+    handleOnChange = (e) => {
         this.setState({
             // category: event.target.value
-            [event.target.name]: event.target.value
+            [e.target.name]: e.target.value
         })
     }
     
 
     //onsubmit --> Put this data into the database and render into the run list
-    handleOnSubmit = (event) => {
-        debugger;
+    //Will need an action to handle this post 
+    handleOnSubmit = (e) => {
+       e.preventDefault() //does not rerender the form
+       this.props.createRun()
     }
 
     render(){
@@ -37,4 +41,11 @@ class RunForm extends React.Component{
     }
 }
 
-export default RunForm;
+
+//mapStateToProps gives you access to what is ALREADY in the redux store
+//This does not need to see what is already in the store
+//This component needs to create data thats sent and update the store with the new stuff
+//pass null because you are not using mapStateToProps
+//You could write mapDispatch to props, or directly import the action like seen here
+//This is saying that you will call dispatch within the createRun action
+export default connect(null, {createRun}) (RunForm);
