@@ -2,11 +2,12 @@
 //class componenets
 import App from "../App";
 import React from "react";
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {connect} from 'react-redux'
 import RunForm from "../components/RunForm";
 import RunList from "../components/RunList";
 import {fetchRuns} from '../actions/fetchRuns.js'
-import { Route } from "react-router-dom";
+
 
 import Test from "../components/Test";
 
@@ -24,13 +25,27 @@ componentDidMount(){
 //render takes in a function for passing in routes to a route
     render() {
         return(
-            <div> 
-                {/* <Route path='/test' component={Test}/> */}
-                {/* <Route path='/runs/new' component={RunForm}/> */}
-                {/* <Route path='/runs/:id' />
-                <Route exact path='/runs' render={() => <RunList runs={this.props.runs}/>} /> */}
-                <RunList runs={this.props.runs}/>
-            </div>
+       
+             /* <Router>
+             <Route path='/test' component={Test} />
+            {/* <Route path='/test' component={Test}/> */
+                /* <Route path='/runs/new' component={RunForm}/> */
+                /* <Route path='/runs/:id' />
+                <Route exact path='/runs' render={() => <RunList runs={this.props.runs}/>} /> */
+                /* <RunList runs={this.props.runs}/> */
+                /* </Router> */
+
+    <BrowserRouter>
+        <div>
+        <Switch>
+            {/* <IndexRoute component={Home}/> */}
+            <Route path="/" component={Test}/>
+            {/* <Route path="/home" component={Home}/>
+            <Route path="/login" component={Login}/>
+            <Route path="/register" component={Register}/> */}
+         </Switch>
+     </div>
+    </BrowserRouter>
         )
     }
 }
