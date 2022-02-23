@@ -6,14 +6,23 @@ import reportWebVitals from './reportWebVitals';
 
 
 //---STORE---
-import {createStore, applyMiddleware} from 'redux'
+import {createStore, applyMiddleware, compose} from 'redux' //compose combines all the different middlewares
 import thunk from 'redux-thunk' //lets you make asynch calls 
 import {Provider} from 'react-redux'
 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+//create a reducer, applyMiddleware and thunk
+//reducer tells us what we want in our store
+let store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
+
+
+//wrap App in Provider
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>
+  ,
   document.getElementById('root')
 );
 
