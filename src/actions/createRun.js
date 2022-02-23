@@ -3,7 +3,6 @@
 //POST fetch
 //data = run object
 export const createRun = (data) => {
-    debugger;
     return (dispatch) => {
         fetch('http://localhost:3000/api/v1/runs', {
             headers: {
