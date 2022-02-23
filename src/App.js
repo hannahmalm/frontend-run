@@ -1,8 +1,10 @@
+import React from 'react'
 import './App.css';
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 import {connect} from 'react-redux'
 //---ACTIONS----
-import { fetchRuns } from './actions/fetchRuns';
+import { fetchRuns } from './actions/fetchRuns'; //Used to test the fetch 
+//---CONTAINERS
 import RunsContainer from './containers/RunsContainer';
 
 
