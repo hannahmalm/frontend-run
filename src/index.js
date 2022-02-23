@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//----REDUCERS----
+import runReducer from './reducers/runReducer';
 
 
 //---STORE---
@@ -11,10 +13,9 @@ import thunk from 'redux-thunk' //lets you make asynch calls
 import {Provider} from 'react-redux'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
 //create a reducer, applyMiddleware and thunk
 //reducer tells us what we want in our store
-let store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
+let store = createStore(runReducer, composeEnhancers(applyMiddleware(thunk)))
 
 
 //wrap App in Provider
