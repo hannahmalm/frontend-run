@@ -13,6 +13,7 @@ class RunForm extends React.Component{
     //onchange
     //pass in event as paramenter
     //event.target.value shows what you are typing in
+    //everytime someone makes a change, save it to the state
     handleOnChange = (e) => {
         this.setState({
             // category: event.target.value
@@ -23,9 +24,12 @@ class RunForm extends React.Component{
 
     //onsubmit --> Put this data into the database and render into the run list
     //Will need an action to handle this post 
+    //create the run action with the state information from the onchange
+    //from the createRun Action, it will dispatch and post
+    //then the reducer will take over
     handleOnSubmit = (e) => {
        e.preventDefault() //does not rerender the form
-       this.props.createRun()
+       this.props.createRun(this.state)
     }
 
     render(){
