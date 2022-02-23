@@ -8,8 +8,13 @@
 export default function runReducer(state = {runs: []}, action) {
     switch (action.type){
         case 'FETCH_RUNS': 
-        //return a new version of state
-        return {runs: action.payload}
+            //return a new version of state
+            return {runs: action.payload}
+        case 'CREATE_RUN':
+            //want to keep runs taht are in state AND add a new one --> use state spread
+            //runs should point to an array that has all of the previous runs in it, along with the new run
+            return {...state, runs: [...state.runs, action.payload]}
+        
     default:
         return state
     }
