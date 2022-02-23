@@ -27,9 +27,11 @@ class RunForm extends React.Component{
     //create the run action with the state information from the onchange
     //from the createRun Action, it will dispatch and post
     //then the reducer will take over
+    //setState is asycnhronous so you could order it anyway and it wont clear the form until the createRun is done
     handleOnSubmit = (e) => {
        e.preventDefault() //does not rerender the form
        this.props.createRun(this.state)
+       this.setState({category: ''}) //clear the form 
     }
 
     render(){
