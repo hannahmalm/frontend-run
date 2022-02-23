@@ -9,7 +9,7 @@ const RunList = (props) => {
     return (
         <div>
            {/* {props.runs.map(run => <li key={run.id}> {run.category}</li> )} */}
-           {props.runs.map(run => <li key={run.id}><RunShow run={run}/></li> )}  
+           {props.runs.map(run => <div key={run.id}><RunShow run={run}/></div> )}  
         </div>
     )
 }

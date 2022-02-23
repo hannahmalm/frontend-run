@@ -5,11 +5,11 @@
 //each prop passed in should be a SPECIFIC Run type
 
 const RunShow = (props) => {
-
+    // console.log(props)
     return(
-        <div>
-            
-        </div>
+        <li>
+        {props.run.category}
+        </li>
     )
 
   
