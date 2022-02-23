@@ -11,7 +11,7 @@ class RunsContainer extends React.Component{
 
 //import fetchRuns from the action
 componentDidMount(){
-    fetchRuns()
+    // this.props.fetchRuns()
 }
 
     render() {
@@ -35,4 +35,4 @@ const mapStateToProps = state => {
 //use connect to connect any component that is a child of app to connect to the store 
 //mapStateToProps - used to see the props
 //mapDispatchToProps
-export default connect(mapStateToProps) (RunsContainer);
+export default connect(mapStateToProps, {fetchRuns}) (RunsContainer);
