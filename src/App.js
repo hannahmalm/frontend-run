@@ -31,7 +31,7 @@ class App extends React.Component {
   }
 }
 
-export default connect()(App);
+export default App;
 
 //mapstattoprops is the way to access values in the store as props
 //mapstatetoprops gives access to see what is already in our store
