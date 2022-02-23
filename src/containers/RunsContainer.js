@@ -4,9 +4,16 @@ import React from "react";
 import {connect} from 'react-redux'
 import RunForm from "../components/RunForm";
 import RunList from "../components/RunList";
+import {fetchRuns} from '../actions/fetchRuns.js'
 
 //a class component must have a render 
 class RunsContainer extends React.Component{
+
+//import fetchRuns from the action
+componentDidMount(){
+    fetchRuns()
+}
+
     render() {
         return(
             <div> 
