@@ -10,8 +10,11 @@ import {fetchRuns} from '../actions/fetchRuns.js'
 class RunsContainer extends React.Component{
 
 //import fetchRuns from the action
+//anytime this container mounts, make a fetch(action), to the backend
+//the action will then dispatch the reducer
+//the reducer will then look at the case and update the state
 componentDidMount(){
-    // this.props.fetchRuns()
+    this.props.fetchRuns()
 }
 
     render() {
@@ -19,7 +22,7 @@ componentDidMount(){
             <div> 
                 In My Run Container I see:
                 <RunForm></RunForm> 
-                <RunList></RunList> 
+                <RunList runs={this.props.runs}/>
             </div>
         )
     }

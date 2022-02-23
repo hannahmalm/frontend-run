@@ -6,5 +6,12 @@
 
 //inital state is the key of runs with the array of runs
 export default function runReducer(state = {runs: []}, action) {
-    return state 
+    switch (action.type){
+        case 'FETCH_RUNS': 
+        //return a new version of state
+        return {runs: action.payload}
+    default:
+        return state
+    }
+    
 }
