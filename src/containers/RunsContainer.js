@@ -12,3 +12,5 @@ class RunsContainer extends React.Component{
         )
     }
 }
+
+export default RunsContainer;
