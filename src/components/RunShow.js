@@ -8,12 +8,13 @@ const RunShow = (props) => {
     console.log(props)
 
     // let run = props.run //this is an array of ALL runs
-    // let run = props.runs[props.match.params.id - 1] //accessing specific element in array
+    let run = props.runs[props.match.params.id - 1] //accessing specific element in array
     // console.log(run)
     return(
         <li>
-        {/* {props.run.category} */}
-        test run
+            {run ? run.category :null}
+            {/* {run.category} */}
+      
         </li>
     )
 

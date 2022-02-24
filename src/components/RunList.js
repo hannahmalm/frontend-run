@@ -4,14 +4,14 @@ import {Route, Link} from 'react-router-dom'
 //functional componenet - stateless; presents a list of run types
 //pass the props in as an argument
 //you do NOT need a render in a funcitonal component
+//Return entire list of Runs
 
 //props is the info being passed from run container to child component of runs
 const RunList = (props) => {
     return (
         <div>
-           {/* {props.runs.map(run => <li key={run.id}> {run.category}</li> )} */}
            {props.runs.map(run => <div key={run.id}>
-               <Link path='/runs/:id'>{run.category}</Link> </div>)}  
+            <Link to={`/runs/${run.id}`}>{run.category}</Link> </div>)}  
         </div>
     )
 }
