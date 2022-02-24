@@ -5,6 +5,7 @@ class LogsContainer extends React.Component {
     render() {
         return(
             <div>
+                logs container
             </div>
         )
     }

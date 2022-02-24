@@ -5,6 +5,7 @@
 //each prop passed in should be a SPECIFIC Run type
 import React from 'react'
 import {Redirect} from 'react-router-dom'
+import LogsContainer from '../containers/LogsContainer'
 
 const RunShow = (props) => {
     console.log(props)
@@ -14,12 +15,15 @@ const RunShow = (props) => {
     // console.log(run)
     //if run is null, redirect to runs
     return(
-        <li>
+        <div>
+             <li>
             {/* {run ? null : <Redirect to='/runs/'/>} */}
             {run ? run.category :null}
             {/* {run.category} */}
-      
         </li>
+        <LogsContainer/>
+        </div>
+       
     )
 
   
