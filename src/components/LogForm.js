@@ -30,7 +30,10 @@ class LogForm extends React.Component {
     handleOnSubmit = (e) => {
         e.preventDefault() //prevents form from automatically submitting
         //action creator in actions --> send in the state and the props id and the run id that will be changing
-        createLog(this.state, this.props.id)
+        //invoke the function to send to the action
+        this.props.createLog(this.state, this.props.id)
+        //clear the form by sending in inital state
+        this.setState({state})
       
     }
 
@@ -53,4 +56,6 @@ class LogForm extends React.Component {
 }
 
 
-export default connect(null) (LogForm);
+//when connect is invoked it knows createLog action will dispatch and update the store
+//mapping createLog as props
+export default connect(null, {createLog}) (LogForm);

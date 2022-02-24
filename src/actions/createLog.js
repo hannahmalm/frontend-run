@@ -1,6 +1,6 @@
 
 
-
+//take the run type and dispatch it to the reducer --> render the run type associted with a reducer
 export const createLog = (log, runId) => {
     return(dispatch) => {
         fetch(`http://localhost:3000/api/v1/runs/${runId}/logs`, {
@@ -11,6 +11,8 @@ export const createLog = (log, runId) => {
             body: JSON.stringify(log)
         })
         .then(response => response.json())
-        .then(log => dispatch({type: 'CREATE_LOG', payload: log}))
+        .then(run => dispatch({type: 'CREATE_LOG', payload: run}))
     }
 }
+
+//ADD CREATE LOG TO REDUCER
