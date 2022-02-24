@@ -11,4 +11,4 @@ const LogList = (props) => {
 }
 
 
-export default LogsList;
+export default LogList;

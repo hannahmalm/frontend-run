@@ -14,6 +14,7 @@ const RunShow = (props) => {
     let run = props.runs[props.match.params.id - 1] //accessing specific element in array
     // console.log(run)
     //if run is null, redirect to runs
+    //render a logs container for EVERY Run Show page --> Render the logs container when the run id matches
     return(
         <div>
              <li>
@@ -21,7 +22,7 @@ const RunShow = (props) => {
             {run ? run.category :null}
             {/* {run.category} */}
         </li>
-        <LogsContainer/>
+        <LogsContainer run={run}/>
         </div>
        
     )
