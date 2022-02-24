@@ -6,6 +6,7 @@ import React from "react";
 //connect compoenet so that when you call it will send dispatch
 //How do you make a controlled form? Add Values and Names that correspond to keys in DB and the form holds values in the local state
 import {connect} from 'react-redux'
+import { createLog } from "../actions/createLog";
 
 class LogForm extends React.Component {
 
@@ -24,6 +25,13 @@ class LogForm extends React.Component {
         this.setState({
             [e.target.name]: e.target.value
         })
+    }
+
+    handleOnSubmit = (e) => {
+        e.preventDefault() //prevents form from automatically submitting
+        //action creator in actions --> send in the state and the props id and the run id that will be changing
+        createLog(this.state, this.props.id)
+      
     }
 
 

@@ -5,11 +5,13 @@ import LogForm from '../components/LogForm';
 import LogsList from '../components/LogList';
 
 //to render the correct log in the list, pass the props for the runs logs
+  //run that log will be associated with
 class LogsContainer extends React.Component {
     render() {
         return(
             <div>
-                <LogForm/>
+                
+                <LogForm logs={this.props.run}/>
                 <LogsList logs={this.props.run && this.props.run.logs}/>
             </div>
         )
