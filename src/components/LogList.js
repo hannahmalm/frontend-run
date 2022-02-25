@@ -2,6 +2,8 @@
 //functional components receive props
 //map over the props logs with one log
 import React from "react";
+import {connect} from 'react-redux'
+import { deleteLog } from "../actions/deleteLog";
 
 
 
@@ -13,18 +15,21 @@ const LogList = (props) => {
     //delete buttons need an onclick
     //when we click delete it will need to go to backed
     //call action creator --> deleteLog.js
-    const handleDelete = (e) => {
+    //coming in as props instead of this.props becasue this is a functional component
+    //passed in arguments are the same as in the deleteLog actions
+    const handleDelete = (log) => {
+        props.deleteLog(log.id, log.run_id)
 
     }
 
     return(
         <div>
             {props.logs && props.logs.map(log =>
-              <li key={log.id}>{log.date} - {log.distance} - {log.pace} - {log.notes} <button onClick={handleDelete}>Delete</button></li>  
+              <li key={log.id}>{log.date} - {log.distance} - {log.pace} - {log.notes} <button onClick={()=> handleDelete(log)}>Delete</button></li>  
                 )}
         </div>
     )
 }
 
-
-export default LogList;
+//now have access to dispatch to props in deletelog. Invoke deleteLog in the handleClick
+export default connect(null,{deleteLog}) (LogList);
