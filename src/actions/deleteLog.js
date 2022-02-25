@@ -1,13 +1,19 @@
 //log id needs to be passed in 
 //asynch so need to return dispatch 
 //send dispatch (object) of the type and payload of what log to get rid of 
-// export const deleteLog = (runId,logId) => {
-//     return (dispatch) => {
-//         return fetch(`http://localhost:3000/api/v1/runs/${runId}/logs/${logId}`. {
-//             method: 'DELETE'
-//         }
-//         .then(response => )
-//     })
+//delete request goes to api/v1/runs/1/logs/3 --> NESTED
+//give the function information by defining a varialbe
+//make a fetch delete
+//after deleting on backend --> update state on the frontend so that frontend has same information
+//send information to redux store --> use dispatch --> dispatch always needs an object of type and payload of log id
+//send the payload of log id to tell dispatch which one to get rid of
+export const deleteLog = (runId,logId) => {
+    return (dispatch) => {
+        return fetch(`http://localhost:3000/api/v1/runs/${runId}/logs/${logId}`, {
+            method: 'DELETE'
+        })
+        .then(response => dispatch({type: 'DELETE_LOG'}))
+    }
 
 
-// }
+}

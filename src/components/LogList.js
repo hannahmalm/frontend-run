@@ -9,10 +9,18 @@ import React from "react";
 //props.logs first checks to see if there are any logs
 //if there are logs, then map over the logs
 const LogList = (props) => {
+
+    //delete buttons need an onclick
+    //when we click delete it will need to go to backed
+    //call action creator --> deleteLog.js
+    const handleDelete = (e) => {
+
+    }
+
     return(
         <div>
             {props.logs && props.logs.map(log =>
-              <li key={log.id}>{log.date} - {log.distance} - {log.pace} - {log.notes} </li>  
+              <li key={log.id}>{log.date} - {log.distance} - {log.pace} - {log.notes} <button onClick={handleDelete}>Delete</button></li>  
                 )}
         </div>
     )
