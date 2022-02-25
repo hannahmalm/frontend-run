@@ -37,6 +37,7 @@ class LogForm extends React.Component {
         console.log('hit sumbit')
         //action creator in actions --> send in the state and the props id and the run id that will be changing
         //invoke the function to send to the action
+        //maping createLog as props so call it and invoke it that way 
         this.props.createLog(this.state, this.props.run.id)
         //clear the form by sending in inital state
         this.setState({

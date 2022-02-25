@@ -19,6 +19,10 @@ export default function runReducer(state = {runs: []}, action) {
             //if the run id does not match, return the original run
             //iterate through runs already created check if the id thats coming back matches the current iteratorn
             //find the run ID thats being passed in, if it matches the payload id
+            //return a new array. Look through all the runs 
+            // if the run id = the action payload id, then return the new array using action.payload (updated run array)
+            //map will create a NEW array of the runs with the new and updated runs
+            //else return the original run arary 
         case 'CREATE_LOG':
            let runs = state.runs.map(run => {
                if (run.id === action.payload.id ){
@@ -28,6 +32,7 @@ export default function runReducer(state = {runs: []}, action) {
                    return run
                }
            })
+           return {...state, runs: runs} //this will update the page and actually render the new log on the runs page
             // return {...state, runs: state.runs.map(run => {
             //     if (run.id === action.payload.id) {
             //         return action.payload
