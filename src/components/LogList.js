@@ -11,7 +11,7 @@ const LogList = (props) => {
     return(
         <div>
             {props.logs && props.logs.map(log =>
-              <li key={log.id}>{log.date} - {log.distance} - {log.pace} - {log.notes}</li>  
+              <li key={log.id}>{log.date} - {log.distance} - {log.pace} - {log.notes} <button onClick={handleOnDelete}>Delete</button></li>  
                 )}
         </div>
     )

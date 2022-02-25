@@ -6,6 +6,7 @@
 //asynch request so return dispatch
 //posting new log to the run/1/logs page 
 //When a new log is created and saved, it renders the run --> last line of action --> then it goes to reducer
+//send back the run that the log is associated with 
 //PAYLOAD = 
 export const createLog = (log, runId) => {
     return(dispatch) => {
