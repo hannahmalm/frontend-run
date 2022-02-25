@@ -19,6 +19,8 @@ const RunShow = (props) => {
     // console.log(run)
     //if run is null, redirect to runs
     //render a logs container for EVERY Run Show page --> Render the logs container when the run id matches
+    //this component renders ONE specific Run Type
+    //pass that run id into the Logs container since it is nested
     return(
         <div>
              <li>
