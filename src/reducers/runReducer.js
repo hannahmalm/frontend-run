@@ -41,6 +41,19 @@ export default function runReducer(state = {runs: []}, action) {
             //     return run 
             //     }
             // })}
+           //the run we are sending back is the run associated with the log
+           // you have to do it this way due to nesting on the backend 
+        case 'DELETE_LOG':
+            let runs = state.runs.map(run => {
+                if (run.id === action.payload.id ){
+                    return action.payload
+                }
+                else {
+                    return run
+                }
+            })
+            return {...state, runs: runs}
+
     default:
         return state
     }

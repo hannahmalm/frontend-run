@@ -5,6 +5,7 @@
 //give the function information by defining a varialbe
 //make a fetch delete
 //after deleting on backend --> update state on the frontend so that frontend has same information
+//turn the run information back into json
 //send information to redux store --> use dispatch --> dispatch always needs an object of type and payload of log id
 //send the payload of log id to tell dispatch which one to get rid of
 export const deleteLog = (runId,logId) => {
@@ -12,7 +13,8 @@ export const deleteLog = (runId,logId) => {
         return fetch(`http://localhost:3000/api/v1/runs/${runId}/logs/${logId}`, {
             method: 'DELETE'
         })
-        .then(response => dispatch({type: 'DELETE_LOG'}))
+        .then(response => response.json())
+        .then(run => dispatch({type: 'DELETE_LOG', payload: run}))
     }
 
 
