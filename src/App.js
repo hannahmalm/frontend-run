@@ -6,6 +6,7 @@ import {connect} from 'react-redux'
 import { fetchRuns } from './actions/fetchRuns'; //Used to test the fetch 
 //---CONTAINERS
 import RunsContainer from './containers/RunsContainer';
+import Home from './components/home';
 
 
 class App extends React.Component {
@@ -26,6 +27,7 @@ class App extends React.Component {
   render() {
   return (
     <div className="App">
+      <Home/>
       <RunsContainer/>
     </div>
   );
