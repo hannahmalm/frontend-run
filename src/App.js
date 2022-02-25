@@ -7,6 +7,10 @@ import { fetchRuns } from './actions/fetchRuns'; //Used to test the fetch
 //---CONTAINERS
 import RunsContainer from './containers/RunsContainer';
 import Home from './components/Home';
+import { Route, Switch } from 'react-router-dom';
+// import RunShow from './components/RunShow';
+// import RunList from './components/RunList';
+// import RunForm from './components/RunForm';
 
 
 class App extends React.Component {
@@ -29,6 +33,7 @@ class App extends React.Component {
     <div className="App">
       <Home/>
       <RunsContainer/>
+   
     </div>
   );
   }

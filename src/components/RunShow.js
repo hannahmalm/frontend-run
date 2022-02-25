@@ -11,7 +11,7 @@ import LogsContainer from '../containers/LogsContainer'
 //The logs container has all of the logs and the ability to create new logs
 
 const RunShow = (props) => {
-    console.log(props)
+    // console.log(props)
 
     // let run = props.run //this is an array of ALL runs
     let run = props.runs[props.match.params.id - 1] //accessing specific element in array
