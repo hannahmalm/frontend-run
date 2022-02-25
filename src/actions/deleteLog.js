@@ -8,7 +8,8 @@
 //turn the run information back into json
 //send information to redux store --> use dispatch --> dispatch always needs an object of type and payload of log id
 //send the payload of log id to tell dispatch which one to get rid of
-export const deleteLog = (runId,logId) => {
+//MUST PASS IN LOG ID FIRST OR ELSE THE QUERY WONT MATCH UP
+export const deleteLog = (logId,runId) => {
     return (dispatch) => {
         return fetch(`http://localhost:3000/api/v1/runs/${runId}/logs/${logId}`, {
             method: 'DELETE'
