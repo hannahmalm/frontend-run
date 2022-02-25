@@ -7,8 +7,6 @@ const Home = () => {
     return(
         <div>
           <Header></Header>
-          <br></br>
-          <br></br>
           <h1> What is run training?</h1>
           <p>Acheiving a well-rounded running performance background also requires variation;there’s no one workout that’ll help you improve every aspect of your running performance. That’s why there are plenty of workout options to choose from; the key is to make sure that you understand what each type of workout offers and how you can best leverage it for your running training and goals…</p>
           <br></br>
@@ -69,7 +67,7 @@ const Home = () => {
 
         <br></br>
         <br></br>
-        
+
         </div>
     )
 }

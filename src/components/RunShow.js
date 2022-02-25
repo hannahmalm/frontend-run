@@ -25,7 +25,7 @@ const RunShow = (props) => {
         <div>
              <li>
             {/* {run ? null : <Redirect to='/runs/'/>} */}
-            {run ? run.category :null}
+            {run ? run.category :null} -  {run ? run.instructions :null}
             {/* {run.category} */}
         </li>
         <LogsContainer run={run}/>

@@ -6,9 +6,22 @@ import Home from './Home'
 
 const Header = (props) => {
     return(
-        <div>
-            <Link to='/runs'>All Run Logs</Link>
-        </div>
+ <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <a className="navbar-brand">Run Log</a>
+  <div className="navBar" id="navbarNav">
+    <ul className="navbar-nav">
+      <li className="nav-item">
+      <Link to='/'> Home </Link>
+      </li>
+      <li className="nav-item">
+      <Link to='/runs'> All Run Logs </Link>
+     </li>
+    </ul>
+  </div>
+</nav>
+        // <div>
+        //     <Link to='/runs'>All Run Logs</Link>
+        // </div>
     )
 }
 
