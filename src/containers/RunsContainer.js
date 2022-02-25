@@ -10,7 +10,6 @@ import {fetchRuns} from '../actions/fetchRuns.js'
 import RunShow from "../components/RunShow";
 
 
-import Test from "../components/Test";
 
 //a class component must have a render 
 class RunsContainer extends React.Component{

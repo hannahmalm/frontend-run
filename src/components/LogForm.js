@@ -6,7 +6,8 @@ import React from "react";
 //connect compoenet so that when you call it will send dispatch
 //How do you make a controlled form? Add Values and Names that correspond to keys in DB and the form holds values in the local state
 import {connect} from 'react-redux'
-import { createLog } from "../actions/createLog";
+import {createLog}  from "../actions/createLog";
+
 
 class LogForm extends React.Component {
 
@@ -21,19 +22,26 @@ class LogForm extends React.Component {
 
     }
 
-    handleOnChange = (e) => {
+    //take the inital state and set it to the value of whatever the input is on the onChange
+    handleOnChange = (event) => {
         this.setState({
-            [e.target.name]: e.target.value
+            [event.target.name]: event.target.value
         })
     }
 
-    handleOnSubmit = (e) => {
-        e.preventDefault() //prevents form from automatically submitting
+    handleOnSubmit = (event) => {
+        event.preventDefault() //prevents form from automatically submitting
+        console.log('hit sumbit')
         //action creator in actions --> send in the state and the props id and the run id that will be changing
         //invoke the function to send to the action
-        this.props.createLog(this.state, this.props.id)
+        this.props.createLog(this.state, this.props.run.id)
         //clear the form by sending in inital state
-        this.setState({state})
+        this.setState({
+            distance: '',
+            pace: '',
+            date: '',
+            notes: ''
+        })
       
     }
 
@@ -43,7 +51,7 @@ class LogForm extends React.Component {
             <div>
               <h3>Create a Run Log</h3>
                 <form onSubmit={this.handleOnSubmit}>
-                    <input  type="number" step="0.01" placeholder="Distance" value={this.state.distance} name="distance" onChange={this.handleOnChange}/>
+                    <input type="number" step="0.01" placeholder="Distance" value={this.state.distance} name="distance" onChange={this.handleOnChange}/>
                     <input type="text" placeholder="Pace" value={this.state.pace} name="pace" onChange={this.handleOnChange}/>
                     <input type="date" placeholder="Date" value={this.state.date} name="date" onChange={this.handleOnChange}/>
                     <input type="text" placeholder="Notes" value={this.state.notes} name="notes" onChange={this.handleOnChange}/>
@@ -58,4 +66,6 @@ class LogForm extends React.Component {
 
 //when connect is invoked it knows createLog action will dispatch and update the store
 //mapping createLog as props
-export default connect(null, {createLog}) (LogForm);
+//When using connect and have no map state to props, use null
+// pass in the action being called in the submit
+export default connect(null, {createLog})(LogForm);

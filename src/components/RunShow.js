@@ -7,11 +7,15 @@ import React from 'react'
 import {Redirect} from 'react-router-dom'
 import LogsContainer from '../containers/LogsContainer'
 
+//when rendering an individual Run types page --> render the Logs container too 
+//The logs container has all of the logs and the ability to create new logs
+
 const RunShow = (props) => {
     console.log(props)
 
     // let run = props.run //this is an array of ALL runs
     let run = props.runs[props.match.params.id - 1] //accessing specific element in array
+    // let run = props.run.filter(run => run.id == props.match.params.id)[0]
     // console.log(run)
     //if run is null, redirect to runs
     //render a logs container for EVERY Run Show page --> Render the logs container when the run id matches

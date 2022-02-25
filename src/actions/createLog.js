@@ -15,4 +15,5 @@ export const createLog = (log, runId) => {
     }
 }
 
-//ADD CREATE LOG TO REDUCER
+//ADD CREATE LOG TO REDUCER --> CREATE LOG
+//take the run and dispatch it to the reducer --> using run in the dispatch because in the create method in rails it renders @run not log
