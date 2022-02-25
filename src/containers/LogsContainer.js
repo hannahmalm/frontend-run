@@ -12,7 +12,6 @@ class LogsContainer extends React.Component {
     render() {
         return(
             <div>
-                
                 <LogForm run={this.props.run}/>
                 <LogsList logs={this.props.run && this.props.run.logs}/>
             </div>
