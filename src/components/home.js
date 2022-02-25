@@ -60,24 +60,16 @@ const Home = () => {
         <br></br>
 
         <div className="card" >
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3crT2UBeJE" title="Fartlek Video Overview"></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6OwwCVSeN8o" title="Hill Repeats Video Overview"></iframe>
                 <div className="card-body">
                     <h2 className="card-title">Hill Repeats</h2>
-                    <p className="card-text">The term is Swedish for “speed play”. Fartleks give you the chance to improve your body’s aerobic endurance without having to adhere to specific timing or pacing. While there’s nothing wrong with giving your workouts some structure (as you’ll read below), many runners could benefit from removing the underlying stress of hitting a specific time or distance. You can instead focus solely on developing aerobic capacity and efficiency without any distraction.</p>
+                    <p className="card-text"> Uphill intervals’ intensity improves what’s called your lactate threshold. That means your body produces less muscle-burning lactic acid at the same swift paces. </p>
                 </div>
         </div>
 
         <br></br>
         <br></br>
-
-
-
-
-
-
-
-
-
+        
         </div>
     )
 }
