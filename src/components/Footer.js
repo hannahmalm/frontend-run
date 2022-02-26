@@ -2,14 +2,20 @@ import React from "react";
 
 function Footer(){
     return(
-        <div>
-            <nav class="navbar fixed-bottom navbar-light bg-light">
-            <a class="navbar-brand" href="#">Fixed bottom</a>
-            </nav>
+    <div>
+        <footer className="navbar fixed-bottom navbar-light bg-light">
+        <div className="container"/>
+            <p className="float-end mb-1">
+                 <a href="/">Back to top</a>
+            </p>
+        </footer>
+    </div>
+
+   
 
 
 
-        </div>
+       
     )
 }
 

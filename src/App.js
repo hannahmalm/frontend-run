@@ -10,6 +10,7 @@ import Home from './components/Home';
 import { Router, Switch, Route, Link} from 'react-router-dom';
 import Header from './components/Header';
 import  Benefits  from './components/Benefits';
+import Footer from './components/Footer';
 
 
 class App extends React.Component {
@@ -40,7 +41,8 @@ class App extends React.Component {
       <Header/>
       <RunsContainer/>  
       <Home/>
-      <Benefits/>
+      {/* <Benefits/> */}
+      <Footer/>
   
     </div>
   
