@@ -1,8 +1,8 @@
 import React from 'react'
-import {Route, Link, NavLink} from 'react-router-dom'
+import {Route, Link, NavLink, Redirect} from 'react-router-dom'
 import RunsContainer from '../containers/RunsContainer'
 import Home from './Home'
-import { Test } from './Test'
+import { Benefits } from './Benefits'
 
 
 function Header (props) {
@@ -13,6 +13,10 @@ function Header (props) {
            <ul className="navbar-nav">
              <a className="navbar-brand">  <Link to='/'>Home</Link></a>
              <a className="navbar-brand"> <Link to='/runs'> All Run Logs </Link></a>
+             <a className="navbar-brand">  <Link to='/benefits'>Benefits</Link></a>
+             {/* <Route exact path="/test">   <Redirect to="/test"  />    </Route> */}
+              
+        
 
            </ul>
          </div>

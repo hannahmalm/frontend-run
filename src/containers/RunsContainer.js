@@ -8,6 +8,8 @@ import RunForm from "../components/RunForm";
 import RunList from "../components/RunList";
 import {fetchRuns} from '../actions/fetchRuns.js'
 import RunShow from "../components/RunShow";
+import Benefits from "../components/Benefits";
+import Home from "../components/Home";
 
 
 
@@ -36,6 +38,7 @@ componentDidMount(){
        
         <Switch>
                 <Route exact path='/runs/new' component={RunForm}/>
+                <Route exact path='/benefits' component={Benefits}/>
                 <Route exact path='/runs/:id' render={(routerProps)=> <RunShow {...routerProps} runs={this.props.runs}/>}  />
                 <Route exact path='/runs' render={(routerProps)=> <RunList {...routerProps} runs={this.props.runs}/>} />
         </Switch>

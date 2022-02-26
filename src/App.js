@@ -7,10 +7,9 @@ import { fetchRuns } from './actions/fetchRuns'; //Used to test the fetch
 //---CONTAINERS
 import RunsContainer from './containers/RunsContainer';
 import Home from './components/Home';
-import { Route, Switch } from 'react-router-dom';
-// import RunShow from './components/RunShow';
-// import RunList from './components/RunList';
-// import RunForm from './components/RunForm';
+import { Router, Switch, Route, Link} from 'react-router-dom';
+import Header from './components/Header';
+import  Benefits  from './components/Benefits';
 
 
 class App extends React.Component {
@@ -28,13 +27,45 @@ class App extends React.Component {
 // }
 
 
+    /* <Header/>
+    <RunsContainer/>  
+     <Home/> */
+      
+    
+
   render() {
   return (
-    <div className="App">
+    
+    <div>
+      <Header/>
+      <RunsContainer/>  
       <Home/>
-      <RunsContainer/>
-   
+      <Benefits/>
+  
     </div>
+  
+    // <Router>
+    // <div className="App">
+    //     <Link to="/">Home</Link>
+    //     {/* <Link to="/runs">All Runs</Link> */}
+    //     <Link to="/test">Test</Link>
+    // </div>
+
+    // <Switch>
+    //   <Route path="/" exact>
+    //     <Home/>
+    //   </Route>
+
+    //   <Route path="/test" exact>
+    //     <Test/>
+    //   </Route>
+
+    //   <Route path="/runs" exact>
+    //     <RunsContainer/>
+    //   </Route> 
+    // </Switch>
+
+    // </Router>
   );
   }
 }

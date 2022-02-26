@@ -23,11 +23,9 @@ const RunShow = (props) => {
     //pass that run id into the Logs container since it is nested
     return(
         <div>
-             <li>
-            {/* {run ? null : <Redirect to='/runs/'/>} */}
-            {run ? run.category :null} -  {run ? run.instructions :null}
-            {/* {run.category} */}
-        </li>
+         <h4>{run ? run.category :null} :  {run ? run.instructions :null}</h4>   
+         <br></br>
+         <br></br>
         <LogsContainer run={run}/>
         </div>
        
