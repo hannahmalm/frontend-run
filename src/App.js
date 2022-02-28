@@ -45,29 +45,8 @@ class App extends React.Component {
       <RunsContainer/>  
       <Footer/>
     </div>
-  
-    // <Router>
-    // <div className="App">
-    //     <Link to="/">Home</Link>
-    //     {/* <Link to="/runs">All Runs</Link> */}
-    //     <Link to="/test">Test</Link>
-    // </div>
+ 
 
-    // <Switch>
-    //   <Route path="/" exact>
-    //     <Home/>
-    //   </Route>
-
-    //   <Route path="/test" exact>
-    //     <Test/>
-    //   </Route>
-
-    //   <Route path="/runs" exact>
-    //     <RunsContainer/>
-    //   </Route> 
-    // </Switch>
-
-    // </Router>
   );
   }
 }
