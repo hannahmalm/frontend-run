@@ -11,6 +11,13 @@ import {createLog}  from "../actions/createLog";
 
 class LogForm extends React.Component {
 
+
+    // initialState = {   distance: '',
+    // pace: '',
+    // date: '',
+    // notes: ''}
+
+    // state = this.initialState
     //controlled values in local state
     //name in form must match key in state
     //state is updated using handle onChange
@@ -40,6 +47,7 @@ class LogForm extends React.Component {
         //maping createLog as props so call it and invoke it that way 
         this.props.createLog(this.state, this.props.run.id)
         //clear the form by sending in inital state
+        // this.initialState
         this.setState({
             distance: '',
             pace: '',

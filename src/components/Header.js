@@ -15,7 +15,7 @@ function Header (props) {
              <a className="navbar-brand"> <Link to='/runs'> All Run Logs </Link></a>
              <a className="navbar-brand">  <Link to='/benefits'>Benefits</Link></a>
              {/* <Route exact path="/test">   <Redirect to="/test"  />    </Route> */}
-              
+             {/* <Route exact path='/runs/:id' render={(routerProps)=> <RunShow {...routerProps} runs={this.props.runs}/>}  /> */}
         
 
            </ul>

@@ -10,6 +10,7 @@ import {fetchRuns} from '../actions/fetchRuns.js'
 import RunShow from "../components/RunShow";
 import Benefits from "../components/Benefits";
 import Home from "../components/Home";
+import NavBar from "../components/NavBar";
 
 
 
@@ -32,15 +33,18 @@ componentDidMount(){
 //routerProps automatically adds in the props to the component we are renderign
 //Switch returns the FIRST path that matches --> SPECIFIC routes must come before any dynamic routes
 //exact does not work fro runs/new and /runs/:id because it technically is the exact path
+//passing the runs props into the Run List and Run show --> I call the property run 
+//routerProps = These router props allow you to go forward or back in your application and are helpful for sending a client to specific locations when they submit a form, or click on a button or link.
+//routerProps are used to push a new route
     render() {
         return(
         <div>
-       
         <Switch>
                 <Route exact path='/runs/new' component={RunForm}/>
                 <Route exact path='/benefits' component={Benefits}/>
                 <Route exact path='/runs/:id' render={(routerProps)=> <RunShow {...routerProps} runs={this.props.runs}/>}  />
                 <Route exact path='/runs' render={(routerProps)=> <RunList {...routerProps} runs={this.props.runs}/>} />
+                {/* <Route exact path='/' render={(routerProps)=> <Home {...routerProps}/>} /> */}
         </Switch>
         </div>
         )

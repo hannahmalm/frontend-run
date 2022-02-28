@@ -11,6 +11,8 @@ import { Router, Switch, Route, Link} from 'react-router-dom';
 import Header from './components/Header';
 import  Benefits  from './components/Benefits';
 import Footer from './components/Footer';
+import NavBar from './components/NavBar';
+import HomeContainer from './containers/HomeContainer';
 
 
 class App extends React.Component {
@@ -39,11 +41,9 @@ class App extends React.Component {
     
     <div>
       <Header/>
+      <HomeContainer/>
       <RunsContainer/>  
-      <Home/>
-      {/* <Benefits/> */}
       <Footer/>
-  
     </div>
   
     // <Router>
