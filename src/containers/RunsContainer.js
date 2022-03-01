@@ -5,12 +5,17 @@ import React from "react";
 import {connect} from 'react-redux'
 import {Route, Switch} from 'react-router-dom'
 import RunForm from "../components/RunForm";
-import RunList from "../components/RunList";
+// import RunList from "../components/RunList";
 import {fetchRuns} from '../actions/fetchRuns.js'
 import RunShow from "../components/RunShow";
 import Benefits from "../components/Benefits";
 import Home from "../components/Home";
 import NavBar from "../components/NavBar";
+import RunListHeader from "../components/RunListHeader";
+import { ListHeader } from "../components/RunList";
+import { RunList } from "../components/RunList";
+
+
 
 
 
@@ -25,6 +30,7 @@ class RunsContainer extends React.Component{
 componentDidMount(){
     this.props.fetchRuns()
 }
+
 
 //render takes in a function for passing in routes to a route
 //in order for the routes to have access to the props, routes neeed to be set here
@@ -43,6 +49,7 @@ componentDidMount(){
                 {/* <Route exact path='/runs/new' component={RunForm}/> */}
                 <Route exact path='/runs/:id' render={(routerProps)=> <RunShow {...routerProps} runs={this.props.runs}/>}  />
                 <Route exact path='/runs' render={(routerProps)=> <RunList {...routerProps} runs={this.props.runs}/>} />
+                {/* <Route exact path='/runs' component={RunListHeader} render={(routerProps)=> <RunList {...routerProps} runs={this.props.runs}/>} /> */}
         </Switch>
         </div>
         )
