@@ -40,11 +40,9 @@ componentDidMount(){
         return(
         <div>
         <Switch>
-                <Route exact path='/runs/new' component={RunForm}/>
-                <Route exact path='/benefits' component={Benefits}/>
+                {/* <Route exact path='/runs/new' component={RunForm}/> */}
                 <Route exact path='/runs/:id' render={(routerProps)=> <RunShow {...routerProps} runs={this.props.runs}/>}  />
                 <Route exact path='/runs' render={(routerProps)=> <RunList {...routerProps} runs={this.props.runs}/>} />
-                {/* <Route exact path='/' render={(routerProps)=> <Home {...routerProps}/>} /> */}
         </Switch>
         </div>
         )
