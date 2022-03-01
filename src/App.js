@@ -30,12 +30,6 @@ class App extends React.Component {
 // }
 
 
-    /* <Header/>
-    <RunsContainer/>  
-     <Home/> */
-      
-    
-
   render() {
   return (
     
