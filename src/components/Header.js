@@ -1,8 +1,8 @@
 import React from 'react'
 import {Route, Link, NavLink, Redirect} from 'react-router-dom'
-import RunsContainer from '../containers/RunsContainer'
-import Home from './Home'
-import { Benefits } from './Benefits'
+// import RunsContainer from '../containers/RunsContainer'
+// import Home from './Home'
+// import { Benefits } from './Benefits'
 
 
 function Header (props) {
@@ -19,5 +19,8 @@ function Header (props) {
        </nav>
     );
   }
+
+
+  
 
 export default Header

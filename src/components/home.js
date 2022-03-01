@@ -5,13 +5,29 @@ import Header from "./Header";
 
 const Home = () => {
     return(
-        <div>
-          {/* <Header></Header> */}
-          <h1> What is Run Training?</h1>
-          <p>Acheiving a well-rounded running performance background also requires variation;there’s no one workout that’ll help you improve every aspect of your running performance. That’s why there are plenty of workout options to choose from; the key is to make sure that you understand what each type of workout offers and how you can best leverage it for your running training and goals…</p>
-          <p>To learn more about the beneifts of running click <Link to='/benefits'>here</Link></p>
-          <br></br>
-          <br></br>
+
+/* <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h1 class="display-5 fw-bold">Centered hero</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+      </div>
+    </div>
+  </div> */
+  <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold">What is Run Training?</h1>
+      <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4"> Acheiving a well-rounded running performance background also requires variation;there’s no one workout that’ll help you improve every aspect of your running performance. That’s why there are plenty of workout options to choose from; the key is to make sure that you understand what each type of workout offers and how you can best leverage it for your running training and goals…</p>
+      <p class="lead mb-4">To learn more about the beneifts of running click <Link to='/benefits'>here</Link></p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+      </div>
+
+
+
         <div className="card" >
           <iframe width="900" height="500" src="https://www.youtube.com/embed/Z3crT2UBeJE" title="Fartlek Video Overview" center></iframe>
                 <div className="card-body">
