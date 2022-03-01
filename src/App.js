@@ -15,6 +15,7 @@ import NavBar from './components/NavBar';
 import HomeContainer from './containers/HomeContainer';
 import BenefitsContainer from './containers/BenefitsContainer';
 import RunListHeader from './components/RunListHeader';
+import ListHeaderContainer from './containers/ListHeaderContainer';
 
 
 class App extends React.Component {
@@ -37,9 +38,8 @@ class App extends React.Component {
     
     <div>
       <Header/>
-      {/* <RunListHeader/> */}
       <HomeContainer/>
-     
+      <ListHeaderContainer/>
       <RunsContainer/>  
       <BenefitsContainer/>
       <Footer/>
