@@ -9,7 +9,7 @@ const Home = () => {
       <h1 class="display-5 fw-bold">What is Run Training?</h1>
       <div class="col-lg-6 mx-auto">
       <p class="lead mb-4"> Acheiving a well-rounded running performance background also requires variation;there’s no one workout that’ll help you improve every aspect of your running performance. That’s why there are plenty of workout options to choose from; the key is to make sure that you understand what each type of workout offers and how you can best leverage it for your running training and goals…</p>
-      <p class="lead mb-4">To learn more about the beneifts of running click <Link to='/benefits'>here</Link></p>
+      <p class="lead mb-4"><b>To learn more about the beneifts of running click <Link to='/benefits'>here</Link></b></p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
       </div>
       </div>

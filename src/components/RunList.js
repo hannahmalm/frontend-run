@@ -10,9 +10,11 @@ import {Route, Link} from 'react-router-dom'
 // const RunList = (props) => {
 export const RunList = (props) => {
     return (
-         <div id="runList"> 
-           {props.runs.map(run => <div key={run.id}>
+     <div class="text-center"> 
+     {props.runs.map(run => <div key={run.id}>
             <Link to={`/runs/${run.id}`}>{run.category}</Link> </div>)}  
+
+         
       </div> 
 
     )
