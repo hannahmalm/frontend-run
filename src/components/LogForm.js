@@ -47,13 +47,13 @@ class LogForm extends React.Component {
         //maping createLog as props so call it and invoke it that way 
         this.props.createLog(this.state, this.props.run.id)
      
-        this.initialState() //clear the form by sending in inital state
-        // this.setState({
-        //     distance: '',
-        //     pace: '',
-        //     date: '',
-        //     notes: ''
-        // })
+    //    this.state() //clear the form by sending in inital state
+        this.setState({
+            distance: '',
+            pace: '',
+            date: '',
+            notes: ''
+        })
       
     }
 
@@ -63,13 +63,15 @@ class LogForm extends React.Component {
     render() {
         return(
             <div>
-              <h3>Create a Run Log</h3>
+              <h3 class='text-center'><b>Create a Run Log</b></h3>
                 <form onSubmit={this.handleOnSubmit}>
+                <div class="text-center">
                     <input type="number" step="0.01" placeholder="Distance" value={this.state.distance} name="distance" onChange={this.handleOnChange} required/>
                     <input type="text" placeholder="Pace" value={this.state.pace} name="pace" onChange={this.handleOnChange} required/>
                     <input type="date" placeholder="Date" value={this.state.date} name="date" onChange={this.handleOnChange} required/>
                     <input type="text" placeholder="Notes" value={this.state.notes} name="notes" onChange={this.handleOnChange} required/>
                     <input type="submit" />
+                    </div>
                 </form>
             </div>
     

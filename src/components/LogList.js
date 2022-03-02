@@ -23,9 +23,10 @@ const LogList = (props) => {
     }
 
     return(
-        <div>
+        <div class="text-center">
+            <br/>
             {props.logs && props.logs.map(log =>
-              <li key={log.id}>{log.date} - {log.distance} - {log.pace} - {log.notes} <button onClick={()=> handleDelete(log)}>Delete</button></li>  
+              <ul key={log.id}> <b>Date: </b>{log.date} -- <b> Distance:</b> {log.distance} Miles -- <b>Pace:</b> {log.pace} -- <b>Notes: </b>{log.notes} <button onClick={()=> handleDelete(log)}> Delete</button></ul>  
                 )}
         </div>
     )

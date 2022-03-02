@@ -1,4 +1,5 @@
 body {
+  background-color: cornsilk;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -15,6 +16,7 @@ code {
 .card {
   background-color: cornsilk;
   align-items: center;
+  border: cornsilk;
 }
 
 /* Hero CSS for Header */
