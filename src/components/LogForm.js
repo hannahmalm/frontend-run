@@ -1,5 +1,5 @@
 import React from "react";
-
+//STATE
 //forms should be a class componenet because you need to keep track of entered values
 //in order to have a contolled form you need to store input values in the state
 //can get access to all props so no need to fetch --> need a submit and then connect to the store 

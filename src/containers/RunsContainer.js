@@ -1,17 +1,16 @@
 //render other components
 //class componenets
-import App from "../App";
+// import App from "../App";
 import React from "react";
 import {connect} from 'react-redux'
 import {Route, Switch} from 'react-router-dom'
-import RunForm from "../components/RunForm";
 // import RunList from "../components/RunList";
 import {fetchRuns} from '../actions/fetchRuns.js'
 import RunShow from "../components/RunShow";
-import Benefits from "../components/Benefits";
-import Home from "../components/Home";
-import RunListHeader from "../components/RunListHeader";
-import { ListHeader } from "../components/RunList";
+// import Benefits from "../components/Benefits";
+// import Home from "../components/Home";
+// import RunListHeader from "../components/RunListHeader";
+// import { ListHeader } from "../components/RunList";
 import { RunList } from "../components/RunList";
 
 
@@ -49,7 +48,6 @@ componentDidMount(){
                 {/* <Route exact path='/runs/new' component={RunForm}/> */}
                 <Route exact path='/runs/:id' render={(routerProps)=> <RunShow {...routerProps} runs={this.props.runs}/>}  />
                 <Route exact path='/runs' render={(routerProps)=> <RunList {...routerProps} runs={this.props.runs}/>} />
-                {/* <Route exact path='/runs' component={RunListHeader} render={(routerProps)=> <RunList {...routerProps} runs={this.props.runs}/>} /> */}
         </Switch>
         </div>
         )

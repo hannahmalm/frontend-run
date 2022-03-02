@@ -13,8 +13,6 @@ export const RunList = (props) => {
      <div class="text-center"> 
      {props.runs.map(run => <div key={run.id}>
             <Link to={`/runs/${run.id}`}>{run.category}</Link> </div>)}  
-
-         
       </div> 
 
     )

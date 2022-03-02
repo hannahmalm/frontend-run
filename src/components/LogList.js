@@ -1,9 +1,11 @@
-//render all logs --> Functional compoenent because only rendering 
-//functional components receive props
-//map over the props logs with one log
+//Stateless - Presentational
 import React from "react";
 import {connect} from 'react-redux'
 import { deleteLog } from "../actions/deleteLog";
+//render all logs --> Functional compoenent because only rendering 
+//functional components receive props
+//map over the props logs with one log
+
 
 
 

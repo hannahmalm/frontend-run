@@ -1,3 +1,5 @@
+//Actions are plain objects with a type field and payload, and describe what happened in the app
+//Action creator is a function
 //data sent is the data from the set state on the handle submit
 //because of thunk, you can bring dispatch in
 //POST fetch

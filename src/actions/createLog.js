@@ -1,5 +1,5 @@
-
-
+//Actions are plain objects with a type field and payload, and describe what happened in the app
+//Action creator is a function
 //take the run type and dispatch it to the reducer --> render the run type associted with a reducer
 //to create a log associated with a run, you need to pass in the log, and you need to know the run ID
 //Submitting a form so its a post

@@ -1,8 +1,6 @@
 import React from 'react'
 import {Route, Link, NavLink, Redirect} from 'react-router-dom'
-// import RunsContainer from '../containers/RunsContainer'
-// import Home from './Home'
-// import { Benefits } from './Benefits'
+//Stateless - Presentational
 
 
 function Header (props) {
@@ -13,7 +11,6 @@ function Header (props) {
            <ul className="navbar-nav">
              <a className="navbar-brand">  <Link to='/'>Home</Link></a>
              <a className="navbar-brand"> <Link to='/runs'> All Run Logs </Link></a>
-             {/* <a className="navbar-brand">  <Link to='/benefits'>Benefits</Link></a> */}
            </ul>
          </div>
        </nav>

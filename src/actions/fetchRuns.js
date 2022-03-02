@@ -1,4 +1,5 @@
-//action creator is a function
+//Actions are plain objects with a type field and payload, and describe what happened in the app
+//Action creator is a function
 
 export function fetchRuns(){
     return (dispatch) => {

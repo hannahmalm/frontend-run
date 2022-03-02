@@ -1,3 +1,5 @@
+//Actions are plain objects with a type field and payload, and describe what happened in the app
+//Action creator is a function
 //log id needs to be passed in 
 //asynch so need to return dispatch 
 //send dispatch (object) of the type and payload of what log to get rid of 
