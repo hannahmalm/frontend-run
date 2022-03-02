@@ -22,8 +22,10 @@ const RunShow = (props) => {
     //this component renders ONE specific Run Type
     //pass that run id into the Logs container since it is nested
     return(
-        <div>
-         <h4>{run ? run.category :null} :  {run ? run.instructions :null}</h4>   
+        <div class='text-center'>
+         <br></br>
+         <br></br>
+         <h4>{run ? run.category :null} Instructions:  {run ? run.instructions :null}</h4>   
          <br></br>
          <br></br>
         <LogsContainer run={run}/>
