@@ -19,11 +19,17 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 //If there are multiple reducers --> use combine Reducers to make a rootReducer
 //----STORE-------
 //The Redux Store runs the root reducer(or in this case runReducer), whenever an action is dispatched
+//createstore takes a reducer function as an argument
 let store = createStore(runReducer, composeEnhancers(applyMiddleware(thunk)))
 
 
 //wrap App in Provider --> gives App and all its children access to the store
 //Wrap App in Router --> gives App and all its children access to create Routes --> You need to import this at top
+//Always call ReactDOM.render(App) to tell React to start rendering root App component --> this is what loads first
+//App can be thought of as a container
+//Wrapping the app with <Provider store={store} enables all components to use the store
+//Global state will go into the Redux Store --> Local state will stay in React components
+//Pass the provider the store
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>

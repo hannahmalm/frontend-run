@@ -1,6 +1,9 @@
 import React from "react";
 //STATE
 //forms should be a class componenet because you need to keep track of entered values
+//Most form states should not be kept in Redux (global), rather should be local to the React component
+
+
 //in order to have a contolled form you need to store input values in the state
 //can get access to all props so no need to fetch --> need a submit and then connect to the store 
 //connect compoenet so that when you call it will send dispatch
