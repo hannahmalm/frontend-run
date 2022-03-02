@@ -11,7 +11,6 @@ import { Router, Switch, Route, Link} from 'react-router-dom';
 import Header from './components/Header';
 import  Benefits  from './components/Benefits';
 import Footer from './components/Footer';
-import NavBar from './components/NavBar';
 import HomeContainer from './containers/HomeContainer';
 import BenefitsContainer from './containers/BenefitsContainer';
 import RunListHeader from './components/RunListHeader';

@@ -10,7 +10,6 @@ import {fetchRuns} from '../actions/fetchRuns.js'
 import RunShow from "../components/RunShow";
 import Benefits from "../components/Benefits";
 import Home from "../components/Home";
-import NavBar from "../components/NavBar";
 import RunListHeader from "../components/RunListHeader";
 import { ListHeader } from "../components/RunList";
 import { RunList } from "../components/RunList";
