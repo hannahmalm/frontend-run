@@ -6,7 +6,7 @@ import App from './App';
 //---STORE---
 import {createStore, applyMiddleware, compose} from 'redux' //compose combines all the different middlewares
 import thunk from 'redux-thunk' //lets you make asynch calls to the backend used for any fetch calls 
-import {Provider} from 'react-redux'
+import {Provider} from 'react-redux' //Library used for integrating Redux and React together
 //---ROUTER---
 import { BrowserRouter } from 'react-router-dom';
 //----REDUCERS----
@@ -16,6 +16,9 @@ import runReducer from './reducers/runReducer';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 //create a reducer, applyMiddleware and thunk
 //reducer tells us what we want in our store
+//If there are multiple reducers --> use combine Reducers to make a rootReducer
+//----STORE-------
+//The Redux Store runs the root reducer(or in this case runReducer), whenever an action is dispatched
 let store = createStore(runReducer, composeEnhancers(applyMiddleware(thunk)))
 
 

@@ -1,7 +1,10 @@
-//a reducer is where you define action types and it takes the previous state
-//1st argument is previous state, second argument is action types
-//a reducer is a funciton
-//import reducer into store 
+//Reducers are FUNCTIONS that calculate a new state value based on previous state + action
+//Reducers take in a previous(inital) state, and an action
+//This reducer gets inported into the Store 
+//-----RULES OF REDUCER------
+    //Reducer must always calculate new state value based on state and action arguments
+    //Reducer must NEVER modify existing state --> make immutable updates instead by copying existing state (...state) using the spread operator
+    //Reducers are Pure functions --> They must never do asynchronous logic or invoke side effects
 
 
 //inital state is the key of runs with the array of runs
