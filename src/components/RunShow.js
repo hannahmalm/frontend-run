@@ -6,6 +6,7 @@
 import React from 'react'
 import {Redirect} from 'react-router-dom'
 import LogsContainer from '../containers/LogsContainer'
+import LogEdit from './LogEdit'
 
 //when rendering an individual Run types page --> render the Logs container too 
 //The logs container has all of the logs and the ability to create new logs
@@ -29,6 +30,7 @@ const RunShow = (props) => {
          <br></br>
          <br></br>
         <LogsContainer run={run}/>
+        <LogEdit run={run}></LogEdit>
         </div>
        
     )

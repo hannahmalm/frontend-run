@@ -32,13 +32,10 @@ class LogEdit extends React.Component {
 
     handleOnSubmit = (event) => {
         event.preventDefault() //prevents form from automatically submitting
-        console.log('hit sumbit')
-        //action creator in actions --> send in the state and the props id and the run id that will be changing
-        //invoke the function to send to the action
-        //maping createLog as props so call it and invoke it that way 
+        console.log('hit update')
+      
         this.props.createLog(this.state, this.props.run.id)
-     
-    //    this.state() //clear the form by sending in inital state
+    //reclear the form
         this.setState({
             distance: '',
             pace: '',
@@ -54,7 +51,7 @@ class LogEdit extends React.Component {
     render() {
         return(
             <div>
-              <h3 class='text-center'><b>Create a Run Log</b></h3>
+              <h3 class='text-center'><b>Edit a Run Log</b></h3>
                 <form onSubmit={this.handleOnSubmit}>
                 <div class="text-center">
                     <input type="number" step="0.01" placeholder="Distance" value={this.state.distance} name="distance" onChange={this.handleOnChange} required/>
@@ -71,4 +68,4 @@ class LogEdit extends React.Component {
 }
 
 
-export default connect(null, {updateLog})(LogForm);
+export default connect(null, {editLog})(LogEdit);
