@@ -13,10 +13,10 @@ export default function runReducer(state = {runs: []}, action) {
         case 'FETCH_RUNS': 
             //return a new version of state
             return {runs: action.payload}
-        case 'CREATE_RUN':
-            //want to keep runs taht are in state AND add a new one --> use state spread
-            //runs should point to an array that has all of the previous runs in it, along with the new run
-            return {...state, runs: [...state.runs, action.payload]}
+        // case 'CREATE_RUN':
+        //     //want to keep runs taht are in state AND add a new one --> use state spread
+        //     //runs should point to an array that has all of the previous runs in it, along with the new run
+        //     return {...state, runs: [...state.runs, action.payload]}
             //go through every run, if the run ID is not the same as the one associted with log, replace it
             //iterate over all runs and if the run id = the id that is coming in to the action.paylod, then replace using map to make a new array to action.payload
             //if the run id does not match, return the original run
