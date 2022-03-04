@@ -12,6 +12,11 @@ import { BrowserRouter } from 'react-router-dom';
 //----REDUCERS----
 import runReducer from './reducers/runReducer';
 
+//----STATE BASICS
+  //Single Source of Truth - global state is stored as an object inside single store
+  //State is Read-Only --> ONLY way to change the state is to dispatch an action
+  //Changes are made with Pure reducer functions
+
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 //create a reducer, applyMiddleware and thunk

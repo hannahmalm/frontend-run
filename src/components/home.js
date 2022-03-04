@@ -32,9 +32,7 @@ const Home = () => {
           <iframe width="900" height="500" src="https://www.youtube.com/embed/HFUz5qazxn0" title="Interval Video Overview"></iframe>
                 <div className="card-body">
                     <h2 className="card-title">Interval</h2>
-                    <p className="card-text">Interval workouts consist of repeated shorter segments of fast running separated by slow jogging or standing recoveries. This format enables a runner to pack more fast running into a single workout than he or she could with a single prolonged fast effort to exhaustion.
-
-</p>
+                    <p className="card-text">Interval workouts consist of repeated shorter segments of fast running separated by slow jogging or standing recoveries. This format enables a runner to pack more fast running into a single workout than he or she could with a single prolonged fast effort to exhaustion.</p>
                 </div>
         </div>
 

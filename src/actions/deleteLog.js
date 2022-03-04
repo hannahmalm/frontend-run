@@ -19,6 +19,5 @@ export const deleteLog = (logId,runId) => {
         .then(response => response.json())
         .then(run => dispatch({type: 'DELETE_LOG', payload: run}))
     }
-
-
 }
+

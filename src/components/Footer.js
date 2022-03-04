@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 //Stateless - Presentational
 
-
-function Footer(){
+const Footer = () => {
+// function Footer(){
     return(
     <div>
         <footer className="navbar fixed-bottom navbar-light bg-light">

@@ -1,6 +1,6 @@
 import React from "react";
 //Stateless - Presentational
-function Benefits () {
+const Benefits = () => {
     return(
       
 <div class="container px-4 py-5" id="featured-3">

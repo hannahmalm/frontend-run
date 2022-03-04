@@ -21,10 +21,12 @@ class LogForm extends React.Component {
     notes: ''}
 
     state = this.initialState
+    //Constructor is the only place where you should assign this.state directly. In all other methods, you need to use this.setState() instead.
     //controlled values in local state
     //name in form must match key in state
     //state is updated using handle onChange
     //hold values for the form in the local state
+    //https://reactjs.org/docs/forms.html
     // state = {
     //     distance: '',
     //     pace: '',
@@ -36,6 +38,7 @@ class LogForm extends React.Component {
     //take the inital state and set it to the value of whatever the input is on the onChange
     //This is how you update state
     //the event is whenever someone types something in the form
+    //The first thing to pass into an onChange is this.setState --> this is used to update the state
     handleOnChange = (event) => {
         this.setState({
             [event.target.name]: event.target.value

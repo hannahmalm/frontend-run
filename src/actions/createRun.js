@@ -20,3 +20,5 @@ export const createRun = (data) => {
 
     }
 }
+
+// dispatch the action object by directly passing it as an argument 

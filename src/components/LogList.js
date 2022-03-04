@@ -2,6 +2,7 @@
 import React from "react";
 import {connect} from 'react-redux'
 import { deleteLog } from "../actions/deleteLog";
+import { editLog } from "../actions/editLog";
 //render all logs --> Functional compoenent because only rendering 
 //functional components receive props
 //map over the props logs with one log
@@ -24,11 +25,17 @@ const LogList = (props) => {
 
     }
 
+    //editLog is the action
+    //pass in the log id and the run id associated with the log
+    const handleEdit = (log) => {
+        props.editLog(log.id, log.run_id)
+    }
+
     return(
         <div class="text-center">
             <br/>
             {props.logs && props.logs.map(log =>
-              <ul key={log.id}> <b>Date: </b>{log.date} -- <b> Distance:</b> {log.distance} Miles -- <b>Pace:</b> {log.pace} -- <b>Notes: </b>{log.notes} <button onClick={()=> handleDelete(log)}> Delete</button></ul>  
+              <ul key={log.id}> <b>Date: </b>{log.date} -- <b> Distance:</b> {log.distance} Miles -- <b>Pace:</b> {log.pace} -- <b>Notes: </b>{log.notes} <button onClick={()=> handleDelete(log)}> Delete</button> <button onClick={()=> handleEdit(log)}> Edit</button></ul>  
                 )}
         </div>
     )

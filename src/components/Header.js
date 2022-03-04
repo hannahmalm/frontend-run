@@ -3,7 +3,7 @@ import {Route, Link, NavLink, Redirect} from 'react-router-dom'
 //Stateless - Presentational
 
 
-function Header (props) {
+const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
          <a className="navbar-brand">Run Log</a>
