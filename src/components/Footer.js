@@ -1,6 +1,7 @@
 import React from "react";
 //Stateless - Presentational
 
+//page reloads --> This is using bootstrap 
 const Footer = () => {
     return(
     <div>
@@ -11,12 +12,6 @@ const Footer = () => {
             </p>
         </footer>
     </div>
-
-   
-
-
-
-       
     )
 }
 

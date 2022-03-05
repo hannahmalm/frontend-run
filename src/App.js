@@ -24,7 +24,6 @@ class App extends React.Component {
   // .then(data => console.log(data[0].logs))
 // }
 
-
   render() {
   return (
     
