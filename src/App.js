@@ -1,26 +1,19 @@
 import React from 'react'
 import './App.css';
-// import React, { Component } from 'react'
-import {connect} from 'react-redux'
-//---ACTIONS----
-import { fetchRuns } from './actions/fetchRuns'; //Used to test the fetch 
 //---CONTAINERS
 import RunsContainer from './containers/RunsContainer';
-import Home from './components/Home';
-import { Router, Switch, Route, Link} from 'react-router-dom';
 import Header from './components/Header';
-import  Benefits  from './components/Benefits';
 import Footer from './components/Footer';
 import HomeContainer from './containers/HomeContainer';
 import BenefitsContainer from './containers/BenefitsContainer';
-import RunListHeader from './components/RunListHeader';
 import ListHeaderContainer from './containers/ListHeaderContainer';
 
 
 class App extends React.Component {
 
 //----TEST THE FETCH------------------------
-//test fetch - asynch, request will take some time, dont do anything with the data until you get respopnse bacek
+//componentDidMount is a lifecycle method that can be used to test the fetch - this was the first step to ensuring backend and frontend are working properly 
+//test fetch - asynch, request will take some time, dont do anything with the data until you get respopnse back
 //fetch request returns a promise which is a promise that it will bring back data
 // componentDidMount() {
   // fetch('http://localhost:3000/api/v1/runs')
@@ -51,7 +44,4 @@ class App extends React.Component {
 
 export default App;
 
-//mapstattoprops is the way to access values in the store as props
-//mapstatetoprops gives access to see what is already in our store
-//gives access to this.props.fetchaccounts
-// export default connect(mapStateToProps)(App);
+

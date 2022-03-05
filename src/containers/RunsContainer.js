@@ -68,4 +68,8 @@ const mapStateToProps = state => {
 //mapDispatchToProps
 // The connect() function then takes the return value from the mapStateToProps() function and adds that return value to the props of the component that is passed through in the last set of parentheses.
 //  We call that component a connected component because it is connected to the store.
+//mapstattoprops is the way to access values in the store as props
+//mapstatetoprops gives access to see what is already in our store
+//gives access to this.props.fetchaccounts
+// export default connect(mapStateToProps)(App);
 export default connect(mapStateToProps, {fetchRuns}) (RunsContainer);
