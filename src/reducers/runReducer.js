@@ -56,17 +56,6 @@ export default function runReducer(state = {runs: []}, action) {
                 }
             })
             return {...state, runs: runsDelete}
-        //  case 'UPDATE_LOG':
-        //     let runsUpdate = state.runs.map(run => {
-        //         if (run.id === action.payload.id ){
-        //             return action.payload
-        //         }
-        //         else {
-        //             return run
-        //         }
-        //     })
-        //     return {...state, runs: runsUpdate}    
-
     default:
         return state
     }
