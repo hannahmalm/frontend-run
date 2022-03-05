@@ -1,7 +1,5 @@
 import React from "react";
-// import RunsContainer from "../containers/RunsContainer";
-import {Route, Link} from 'react-router-dom'
-// import Header from "./Header";
+import {Link} from 'react-router-dom'
 //Stateless - Presentational
 
 const Home = () => {

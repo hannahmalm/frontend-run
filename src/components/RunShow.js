@@ -4,7 +4,7 @@
 //iterate overall of the Run types on the list --> Each run will have an ID and create a component for  each 
 //each prop passed in should be a SPECIFIC Run type
 import React from 'react'
-import {Redirect} from 'react-router-dom'
+// import {Redirect} from 'react-router-dom'
 import LogsContainer from '../containers/LogsContainer'
 // import LogEdit from './LogEdit'
 

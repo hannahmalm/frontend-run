@@ -1,13 +1,12 @@
 import React from "react";
-import RunShow from "./RunShow";
-import {Route, Link} from 'react-router-dom'
+// import RunShow from "./RunShow";
+import {Link} from 'react-router-dom'
 //functional componenet - stateless; presents a list of run types
-//pass the props in as an argument
+
 //you do NOT need a render in a funcitonal component
 //Return entire list of Runs
 
-//props is the info being passed from run container to child component of runs
-// const RunList = (props) => {
+//props are passed in as an argument info being passed from run container to child component of runs
 export const RunList = (props) => {
     return (
      <div class="text-center"> 
@@ -17,6 +16,3 @@ export const RunList = (props) => {
 
     )
 }
-
-// export default RunList;
-// export RunList, Heads;
