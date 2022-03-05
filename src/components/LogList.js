@@ -2,7 +2,7 @@
 import React from "react";
 import {connect} from 'react-redux'
 import { deleteLog } from "../actions/deleteLog";
-import { editLog } from "../actions/editLog";
+
 //render all logs --> Functional compoenent because only rendering 
 //functional components receive props
 //map over the props logs with one log
