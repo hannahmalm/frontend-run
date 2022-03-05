@@ -4,17 +4,12 @@
 import React from "react";
 import {connect} from 'react-redux'
 import {Route, Switch} from 'react-router-dom'
-// import RunList from "../components/RunList";
+import RunShow from "../components/RunShow"; //default export
+import { RunList } from "../components/RunList"; //named export
+
+
+//IMPORT FETCH ACTION FOR COMPONENT DID MOUNT
 import {fetchRuns} from '../actions/fetchRuns.js'
-import RunShow from "../components/RunShow";
-// import Benefits from "../components/Benefits";
-// import Home from "../components/Home";
-// import RunListHeader from "../components/RunListHeader";
-// import { ListHeader } from "../components/RunList";
-import { RunList } from "../components/RunList";
-
-
-
 
 
 
@@ -45,11 +40,10 @@ componentDidMount(){
     render() {
         return(
         <div>
-            
-        <Switch>
-                <Route exact path='/runs/:id' render={(routerProps)=> <RunShow {...routerProps} runs={this.props.runs}/>}  />
-                <Route exact path='/runs' render={(routerProps)=> <RunList {...routerProps} runs={this.props.runs}/>} />
-        </Switch>
+            <Switch>
+                    <Route  path='/runs/:id' render={(routerProps)=> <RunShow {...routerProps} runs={this.props.runs}/>}  />
+                    <Route  path='/runs' render={(routerProps)=> <RunList {...routerProps} runs={this.props.runs}/>} />
+            </Switch>
         </div>
         )
     }
