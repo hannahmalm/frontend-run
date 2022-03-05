@@ -22,6 +22,7 @@ class RunsContainer extends React.Component{
 //the reducer will then look at the case and update the state
 //Lifecycle method that gets called AFTER the render
 //You would use this method to set up any long-running processes or asynchronous processes such as fetching and updating data
+//gets a list of the run categories from the backend
 componentDidMount(){
     this.props.fetchRuns()
 }
@@ -52,7 +53,7 @@ componentDidMount(){
 
 //takes in state from reducts store, returning runs
 const mapStateToProps = state => {
-    return{
+    return {
         runs: state.runs
     }
 }
@@ -60,10 +61,7 @@ const mapStateToProps = state => {
 //use connect to connect any component that is a child of app to connect to the store 
 //mapStateToProps - used to see the props
 //mapDispatchToProps
-// The connect() function then takes the return value from the mapStateToProps() function and adds that return value to the props of the component that is passed through in the last set of parentheses.
-//  We call that component a connected component because it is connected to the store.
-//mapstattoprops is the way to access values in the store as props
-//mapstatetoprops gives access to see what is already in our store
-//gives access to this.props.fetchaccounts
-// export default connect(mapStateToProps)(App);
+//The connect() function then takes the return value from the mapStateToProps() function and adds that return value to the props of the component that is passed through in the last set of parentheses.
+//Call that component a connected component because it is connected to the store.
+//mapstattoprops is the way to access values in the store as props --> gives access to see what is already in the store
 export default connect(mapStateToProps, {fetchRuns}) (RunsContainer);

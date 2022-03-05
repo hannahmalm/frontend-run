@@ -8,7 +8,7 @@ import { Link} from 'react-router-dom'
 const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-         <a className="navbar-brand">Run Log</a>
+         <a className="navbar-brand">Run Journal</a>
          <div className="navBar" id="navbarNav">
            <ul className="navbar-nav">
              <a className="navbar-brand">  <Link to='/'>Home</Link></a>

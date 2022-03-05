@@ -14,7 +14,6 @@ import {createLog}  from "../actions/createLog";
 
 class LogForm extends React.Component {
 
-
     initialState = {   distance: '',
     pace: '',
     date: '',
@@ -86,10 +85,10 @@ class LogForm extends React.Component {
 }
 
 
-//when connect is invoked it knows createLog action will dispatch and update the store
-//mapping createLog as props
+//When connect is invoked it knows createLog action will dispatch and update the store
+//Mapping createLog as props
 //When using connect and have no map state to props, use null
 //dont need map state to props because its recieve all props in here 
-// pass in the action being called in the submit
+//Pass in the action being called in the submit
 //createLog here is the mapDispatch
 export default connect(null, {createLog})(LogForm);

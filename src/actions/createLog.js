@@ -16,7 +16,10 @@ export const createLog = (log, runId) => {
             body: JSON.stringify(log)
         })
         .then(response => response.json())
-        .then(run => dispatch({type: 'CREATE_LOG', payload: run}))  //take the run type and dispatch it to the reducer --> render the run type associted with a reducer
+        .then(run => dispatch({
+            type: 'CREATE_LOG',
+             payload: run
+        }))  //take the run type and dispatch it to the reducer --> render the run type associted with a reducer
     }
 }
 
