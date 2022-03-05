@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Fork and Clone the backend to get started
+
 ## Available Scripts
 
 In the project directory, you can run:
