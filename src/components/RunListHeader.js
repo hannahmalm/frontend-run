@@ -4,7 +4,7 @@ import React from 'react'
 
 const RunListHeader = (props) => {
     return(
-        <div className="px-4 text-center">
+        <div className="header-text-center">
             <br></br>
             <br></br>
         <h1 className="display-5 fw-bold">All Run Journals</h1>
