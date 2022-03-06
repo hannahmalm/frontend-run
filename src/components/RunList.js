@@ -8,6 +8,9 @@ import {Link} from 'react-router-dom'
 export const RunList = (props) => {
     return (
      <div className="text-center"> 
+     <br></br>
+     <br></br>
+     <br></br>
      {props.runs.map(run => <div key={run.id}>
             <Link to={`/runs/${run.id}`}>{run.category}</Link> </div>)}  
       </div> 

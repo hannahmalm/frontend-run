@@ -22,10 +22,9 @@ const RunShow = (props) => {
     //pass that run id into the Logs container since it is nested
     return(
         <div class='text-center'>
-            <br></br>
-            <br></br>
+            <br/>
             <h4>{run ? run.category :null} Instructions:  {run ? run.instructions :null}</h4>   
-            <br></br>
+            {/* <br></br> */}
             {run ? runVideo :null}
             <br></br>
             <LogsContainer run={run}/>
