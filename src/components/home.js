@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom'
 //Stateless - Presentational
+import Footer from "./Footer";
 
 const Home = () => {
     return(
@@ -75,9 +76,7 @@ const Home = () => {
                     <p className="card-text"> Uphill intervals’ intensity improves what’s called your lactate threshold. That means your body produces less muscle-burning lactic acid at the same swift paces. </p>
                 </div>
         </div> */}
-
-        <br></br>
-        <br></br>
+        <Footer/>
 
         </div>
     )
