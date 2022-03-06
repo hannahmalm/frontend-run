@@ -15,7 +15,7 @@ const RunShow = (props) => {
     let run = props.runs[props.match.params.id - 1] //accessing specific element in array
     // console.log(run)
 
-    
+    let runVideo =  <iframe width="600" height="350" src={run.video}></iframe>
     //if run is null, redirect to runs
     //render a logs container for EVERY Run Show page --> Render the logs container when the run id matches
     //this component renders ONE specific Run Type
@@ -26,6 +26,7 @@ const RunShow = (props) => {
             <br></br>
             <h4>{run ? run.category :null} Instructions:  {run ? run.instructions :null}</h4>   
             <br></br>
+            {run ? runVideo :null}
             <br></br>
             <LogsContainer run={run}/>
         </div>
