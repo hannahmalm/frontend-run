@@ -12,9 +12,19 @@ const Home = () => {
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
       </div>
       </div>
+      
 
 
-        <div className="card" >
+
+      <div className="card" >
+          <iframe width="900" height="500" src="https://www.youtube.com/embed/l30qAJwP_AA" title="Run Type Video Overview" center></iframe>
+                <div className="card-body">
+                    <h2 className="card-title">Run Training Types</h2>
+                    <p className="card-text">Different types of running exercises can help differentiate your training goals and increase performace. This video demonstrates the basics of each run and the differences between the categories.</p>
+                </div>
+        </div>
+
+        {/* <div className="card" >
           <iframe width="900" height="500" src="https://www.youtube.com/embed/Z3crT2UBeJE" title="Fartlek Video Overview" center></iframe>
                 <div className="card-body">
                     <h2 className="card-title">Fartlek</h2>
@@ -23,9 +33,9 @@ const Home = () => {
         </div>
 
         <br></br>
-        <br></br>
+        <br></br> */}
 
-        <div className="card" >
+        {/* <div className="card" >
           <iframe width="900" height="500" src="https://www.youtube.com/embed/HFUz5qazxn0" title="Interval Video Overview"></iframe>
                 <div className="card-body">
                     <h2 className="card-title">Interval</h2>
@@ -64,7 +74,7 @@ const Home = () => {
                     <h2 className="card-title">Hill Repeats</h2>
                     <p className="card-text"> Uphill intervals’ intensity improves what’s called your lactate threshold. That means your body produces less muscle-burning lactic acid at the same swift paces. </p>
                 </div>
-        </div>
+        </div> */}
 
         <br></br>
         <br></br>

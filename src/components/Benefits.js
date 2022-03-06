@@ -13,7 +13,7 @@ const Benefits = () => {
             </svg>
         </div>
         <h2>Running is a Social Activity</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <p>Various running clubs or groups provide a way to meet like-minded people who share the same passion for running.</p>
       </div>
 
      {/* New Card */}
@@ -24,7 +24,7 @@ const Benefits = () => {
           </svg>  
         </div>
         <h2>Running Builds Muscular Strength.</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <p>Running helps build muscular strength, especially the heart muscle. Running gets your heart pumping, which in turn increases its longevity and capability over the long haul. </p>
       </div>
 
       {/* New Card */}
@@ -35,7 +35,7 @@ const Benefits = () => {
            </svg>
         </div>
         <h2>Running Burns Calories.</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <p>Running burns on average 80 - 140 calories per mile. High Endurance running, for example Hill Repeats, may burn more calories and promote EPOC (Post Exercise Oxygen Consumption).</p>
       </div>
 
       {/* New Card */}
@@ -47,7 +47,7 @@ const Benefits = () => {
         </svg>
         </div>
         <h2>Running Improves Your Mood.</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <p> Studies show that aerobic exercises, such as brisk walking, running or jogging, release endorphins that can reduce depression and anxiety.</p>
       </div>
     </div>
   </div>

@@ -23,8 +23,10 @@ class RunsContainer extends React.Component{
 //Lifecycle method that gets called AFTER the render
 //You would use this method to set up any long-running processes or asynchronous processes such as fetching and updating data
 //gets a list of the run categories from the backend
+//This could also be hardcoded as an iteration but wanted to demo componentDidMount
 componentDidMount(){
     this.props.fetchRuns()
+    // console.log(this.props) --> All the run categories
 }
 
 
