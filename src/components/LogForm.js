@@ -68,9 +68,9 @@ class LogForm extends React.Component {
     render() {
         return(
             <div>
-              <h3 class='text-center'><b>Create a Run Log</b></h3>
+              <h3 class='form-text-center'><b>Create a Run Journal</b></h3>
                 <form onSubmit={this.handleOnSubmit}>
-                <div class="text-center">
+                <div class="form-text-center">
                     <input type="number" step="0.01" placeholder="Distance" value={this.state.distance} name="distance" onChange={this.handleOnChange} required/>
                     <input type="text" placeholder="Pace" value={this.state.pace} name="pace" onChange={this.handleOnChange} required/>
                     <input type="date" placeholder="Date" value={this.state.date} name="date" onChange={this.handleOnChange} required/>
