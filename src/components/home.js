@@ -22,21 +22,7 @@ const Home = () => {
                     <p className="lead mb-4">This video demonstrates the basics of each run and the differences between the categories.</p>
                 </div>
         </div>
-{/* 
-        <div className="card" >
-          <iframe width="900" height="500" src="https://www.youtube.com/embed/Z3crT2UBeJE" title="Fartlek Video Overview" center></iframe>
-                <div className="card-body">
-                    <h2 className="card-title">Run Training Types</h2>
-                    <p className="card-text">The term is Swedish for “speed play”. Fartleks give you the chance to improve your body’s aerobic endurance without having to adhere to specific timing or pacing. While there’s nothing wrong with giving your workouts some structure (as you’ll read below), many runners could benefit from removing the underlying stress of hitting a specific time or distance. You can instead focus solely on developing aerobic capacity and efficiency without any distraction.</p>
-                </div>
-        </div>
-
-        <br></br>
-        <br></br> */}
-
-    
-
-        </div>
+    </div>
     )
 }
 
