@@ -4,7 +4,7 @@ import { Link} from 'react-router-dom'
 
 
 //Could have used NavLink but choose to use Link with the bootstrap HTML
-// className instead of class because class is a reserved keyword
+//className instead of class because class is a reserved keyword
 const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,8 +18,5 @@ const Header = () => {
        </nav>
     );
   }
-
-
-  
 
 export default Header

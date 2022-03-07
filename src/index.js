@@ -8,7 +8,7 @@ import {createStore, applyMiddleware, compose} from 'redux' //compose combines a
 import thunk from 'redux-thunk' //lets you make asynch calls to the backend used for any fetch calls 
 import {Provider} from 'react-redux' //Library used for integrating Redux and React together
 //---ROUTER---
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';//Wraps around Provider and App to allow you to user Route
 //----REDUCERS----
 import runReducer from './reducers/runReducer'; //If there are multiple reducers --> use combine Reducers to make a rootReducer
 //If this application expands in the future, add in all reducers here and combine reducers
