@@ -14,10 +14,6 @@ const Home = () => {
       </div>
       </div>
       
-
-        
-
-
       <div className="card" >
           <iframe width="900" height="500" src="https://www.youtube.com/embed/l30qAJwP_AA" title="Run Type Video Overview" center></iframe>
                 <div className="card-body">
@@ -38,47 +34,7 @@ const Home = () => {
         <br></br>
         <br></br> */}
 
-        {/* <div className="card" >
-          <iframe width="900" height="500" src="https://www.youtube.com/embed/HFUz5qazxn0" title="Interval Video Overview"></iframe>
-                <div className="card-body">
-                    <h2 className="card-title">Interval</h2>
-                    <p className="card-text">Interval workouts consist of repeated shorter segments of fast running separated by slow jogging or standing recoveries. This format enables a runner to pack more fast running into a single workout than he or she could with a single prolonged fast effort to exhaustion.</p>
-                </div>
-        </div>
-
-        <br></br>
-        <br></br>
-
-        <div className="card" >
-          <iframe width="900" height="500" src="https://www.youtube.com/embed/k5vqiyry2z8" title="Tempo Video Overview"></iframe>
-                <div className="card-body">
-                    <h2 className="card-title">Tempo</h2>
-                    <p className="card-text">A tempo run is a sustained effort at lactate threshold intensity, which is the fastest pace that can be sustained for one hour in highly fit runners and the fastest pace that can be sustained for 20 minutes in less fit runners. Tempo or threshold runs serve to increase the speed you can sustain for a prolonged period of time and to increase the time you can sustain that relatively fast pace. </p>
-                </div>
-        </div>
-
-        <br></br>
-        <br></br>
-
-        <div className="card" >
-          <iframe width="900" height="500" src="https://www.youtube.com/embed/jmyLSQ0REmo" title="Long Distance Video Overview"></iframe>
-                <div className="card-body">
-                    <h2 className="card-title">Long Distance</h2>
-                    <p className="card-text">  Generally, a long run is a base run that lasts long enough to leave a runner moderately to severely fatigued. The function of a long run is to increase raw endurance. The distance or duration required to achieve this effect depends, of course, on your current level of endurance. As a general rule, your longest run should be long enough to give you confidence that raw endurance will not limit you in races. </p>
-                </div>
-        </div>
-
-        <br></br>
-        <br></br>
-
-        <div className="card" >
-          <iframe width="900" height="500" src="https://www.youtube.com/embed/6OwwCVSeN8o" title="Hill Repeats Video Overview"></iframe>
-                <div className="card-body">
-                    <h2 className="card-title">Hill Repeats</h2>
-                    <p className="card-text"> Uphill intervals’ intensity improves what’s called your lactate threshold. That means your body produces less muscle-burning lactic acid at the same swift paces. </p>
-                </div>
-        </div> */}
-        {/* <Footer/> */}
+    
 
         </div>
     )
