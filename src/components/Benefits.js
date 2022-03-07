@@ -1,5 +1,5 @@
 import React from "react";
-//Stateless - Presentational - This will not change, but might be 
+//Stateless - Presentational - Static Informational Page
 const Benefits = () => {
     return(
       
