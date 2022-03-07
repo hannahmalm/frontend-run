@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 const RunListHeader = (props) => {
     return(
         <div className="header-text-center">

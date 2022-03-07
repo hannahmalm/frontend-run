@@ -9,10 +9,13 @@ import LogsContainer from '../containers/LogsContainer'
 
 //when rendering an individual Run types page --> render the Logs container too 
 //The logs container has all of the logs and the ability to create new logs
+//the props passed in is the array of runs
 
 const RunShow = (props) => {
     // console.log(props)
-    let run = props.runs[props.match.params.id - 1] //accessing specific element in array
+    // debugger;
+    //dynamic path = "runs/:id"
+    let run = props.runs[props.match.params.id - 1] //accessing specific element (run id) within the runs array - sub 1 because array starts at 0
     // console.log(run)
 
     let runVideo =  <iframe width="600" height="350" src={run.video}></iframe>

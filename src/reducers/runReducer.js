@@ -12,7 +12,13 @@ export default function runReducer(state = {runs: []}, action) {
     switch (action.type){
         case 'FETCH_RUNS': 
             //return a new version of state
-            return {runs: action.payload}
+            return {runs: action.payload} 
+        //----------------------------------   
+            
+            
+            
+            
+            //Fetch Runs action payload = runs
             //go through every run, if the run ID is not the same as the one associted with log, replace it
             //iterate over all runs and if the run id = the id that is coming in to the action.paylod, then replace using map to make a new array to action.payload
             //if the run id does not match, return the original run
