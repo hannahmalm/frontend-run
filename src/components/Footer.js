@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";  --> This is done under the hood so not needed to import 
 //Stateless - Presentational
 
 //page reloads --> This is using bootstrap 

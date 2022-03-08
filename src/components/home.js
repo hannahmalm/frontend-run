@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react"; --> This is done under the hood so not needed to import 
 import {Link} from 'react-router-dom'
 //Stateless - Presentational
 
